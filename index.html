@@ -23,7 +23,7 @@
             },
             fontFamily: {
               bebas: ["Bebas Neue", "cursive"],
-              monsterrat: ["Montserrat", "sans-serif"],
+              montserrat: ["Montserrat", "sans-serif"],
             },
           },
         },
@@ -31,15 +31,71 @@
     </script>
   </head>
   <body>
-    <header class="w-full h-20 flex justify-center">
+    <!-- navbar -->
+    <header class="w-full h-20 flex justify-center absolute bg-white">
       <nav class="w-4/5 h-full flex justify-between items-center font-bebas">
         <h1 class="text-3xl">Jhaka Naka Production</h1>
-        <ul class="flex gap-x-5 text-xl">
+        <ul class="flex gap-x-5 text-xl hidden md:flex">
           <li>About Us</li>
           <li>Our Movies</li>
           <li>Services</li>
         </ul>
       </nav>
     </header>
+    <main>
+      <!-- Banner section -->
+      <section
+        class="h-screen bg-[url('./images/banner.jpg')] bg-cover flex items-center"
+      >
+        <div class="mx-10 w-2/4 font-bebas text-white">
+          <p>Movie production studio</p>
+          <h1 class="text-7xl">Films MAde to</h1>
+          <h1 class="text-7xl text-yellow">Perfection</h1>
+          <p class="font-montserrat mt-5">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+            tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+          </p>
+          <button
+            class="border-2 px-5 py-2 text-xl mt-10 hover:bg-yellow hover:text-black hover:border-yellow ease-in duration-300"
+          >
+            Discover More
+          </button>
+        </div>
+      </section>
+      <!-- About Us -->
+      <section class="p-10">
+        <div class="p-10 border-2 border-offBlack">
+          <div class="flex gap-x-10">
+            <div
+              class="bg-red w-2/4 h-[500px] bg-[url('images/camera-man.jpg')] bg-cover bg-center flex justify-center items-end"
+            >
+              <h1
+                class="font-bebas text-4xl text-offBlack bg-white inline-block py-2 px-20 rounded-md drop-shadow-xl -mb-6"
+              >
+                23 years of Experience
+              </h1>
+            </div>
+            <div class="w-2/4 h-full font-bebas">
+              <p>ABOUT US</p>
+              <h1 class="text-7xl">FIlming Experience</h1>
+              <h1 class="text-7xl">Just Got better</h1>
+              <p class="font-montserrat mt-10">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Consequatur, accusamus incidunt odit cupiditate eaque quaerat
+                excepturi aliquam aliquid, qui praesentium ipsum? Cum vero
+                explicabo cupiditate sequi, accusantium culpa eligendi molestias
+                inventore similique et, nemo alias, veniam iure debitis aliquam
+                deleniti!
+              </p>
+              <button
+                class="border-2 border-black font-bebas px-5 py-2 text-xl mt-10 hover:bg-yellow hover:text-black hover:border-yellow ease-in duration-300"
+              >
+                Discover More
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
